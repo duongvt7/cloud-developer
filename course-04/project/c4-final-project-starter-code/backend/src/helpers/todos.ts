@@ -1,7 +1,7 @@
 import 'source-map-support/register';
 import { APIGatewayProxyEvent } from 'aws-lambda';
 import { getUserId } from '../lambda/utils';
-import { TodosAccess } from './todosAcess'
+import { TodosAccess } from '../dataAccess/todosAcess'
 import { TodosStorage } from './attachmentUtils';
 import { TodoItem } from '../models/TodoItem'
 import { CreateTodoRequest } from '../requests/CreateTodoRequest'
